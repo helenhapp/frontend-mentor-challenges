@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: []()
-- Live Site URL: [https://github.com/helenhapp/frontend-mentor-challenges/tree/main/base-apparel-coming-soon-page]()
+- [Live Site URL](https://github.com/helenhapp/frontend-mentor-challenges/tree/main/base-apparel-coming-soon-page)
 
 ## My process
 
