@@ -31,8 +31,14 @@
         </p>
 
         <form class="email-form">
-          <input type="email" placeholder="Email Address" required />
-          <button type="submit" class="email-btn">
+          <input
+            type="email"
+            placeholder="Email Address"
+            id="email-input"
+            pattern="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/"
+            required
+          />
+          <button type="submit" class="email-btn" id="email-btn">
             <img src="images/icon-arrow.svg" alt="" />
           </button>
         </form>
@@ -40,7 +46,5 @@
 
       <div class="hero-image"></div>
     </main>
-
-    <script src="main.js"></script>
   </body>
 </html>

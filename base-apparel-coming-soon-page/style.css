@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 :root {
-    --clr-desaturated-red: 0 36% 70%;
+    --clr-desaturated-red: 23, 36%, 70%;
     --clr-soft-red: 0 93% 68%;
     --clr-dark-grayish-red: 0 6% 24%;
 
     --gradient-primary: linear-gradient(
         135deg,
         hsl(0 0% 100%),
-        hsl(0 100% 98%)
+        hsl(36, 100%, 98%)
     );
 
     --gradient-secondary: linear-gradient(
         135deg,
-        hsl(0 80% 86%),
+        hsl(25, 80%, 86%),
         hsl(0 74% 74%)
     );
 
@@ -30,7 +30,7 @@
     --fs-600: 2.5rem;
     --fs-700: 3rem;
     --fs-800: 4rem;
-    --fs-900: 4.45rem;
+    --fs-900: 4.85rem;
 }
 
 *,
@@ -136,7 +136,7 @@ input:focus {
 }
 
 .email-btn {
-    padding: 1rem 1.75rem;
+    padding: 1.1rem 2rem;
     border: 0;
     border-radius: 100vw;
     background: var(--gradient-secondary);
@@ -144,15 +144,24 @@ input:focus {
     box-shadow: 0 5px 30px hsl(var(--clr-dark-grayish-red) / .2);
 }
 
+.email-btn:hover,
+.email-btn:focus {
+    background: peachpuff;
+}
+
 @media (min-width: 40rem) {
     .main-content {
         grid-template-rows: 1fr 5fr 5fr;
+    }
+
+    .heading {
+        font-size: var(--fs-800);
     }
 }
 
 @media (min-width: 60rem) {
     .main-content {
-        grid-template-columns: 4fr 3fr;
+        grid-template-columns: 3fr 2fr;
         grid-template-rows: 1fr;
 
         grid-template-areas: 
@@ -165,18 +174,18 @@ input:focus {
     }
 
     .hero-image {
-        background-image: url(images/hero-desktop.jpg);
+        background-image: url(images/clothes-desktop.jpg);
         margin: 0;
     }
 
     .text {
-        background: url(images/bg-pattern-desktop.svg), var(--gradient-primary);
+        /* background: url(images/bg-pattern-desktop.svg), var(--gradient-primary); */
         background-repeat: no-repeat;
         background-size: cover;
 
         text-align: left;
         gap: 2rem;
-        padding: 5rem 8rem;
+        padding: 6.5rem 8rem;
     }
 
     .email-form {
