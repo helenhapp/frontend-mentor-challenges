@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/base-apparel-page-screenshot.png)
 
 ### Links
 
-- Solution URL: []()
-- [Live Site URL](https://github.com/helenhapp/frontend-mentor-challenges/tree/main/base-apparel-coming-soon-page)
+- [Solution URL](https://github.com/helenhapp/frontend-mentor-challenges/tree/main/base-apparel-coming-soon-page)
+- [Live Site URL](https://base-apparel-coming-soon-page-fem.netlify.app/)
 
 ## My process
 
