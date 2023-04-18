@@ -56,7 +56,8 @@ svg {
 body {
     font-family: var(--ff-primary);
     font-size: 0.938rem;
-    color: hsl(var(--clr-medium-grey));
+    /* color: hsl(var(--clr-light-grey)); */
+    color: hsl(var(--clr-white), .5);
     background-color: hsl(var(--clr-very-dark-blue));
     min-height: 100vh;
     width: 100%;
@@ -73,7 +74,6 @@ body {
         hsl(var(--clr-dark-blue)), 
         hsla(var(--clr-dark-blue),  .4)
     );
-    box-shadow: 0 0.5rem hsl(var(--clr-light-grey), .1);
 }
 
 .card {
@@ -202,4 +202,31 @@ body {
         width: 3rem;
         height: 3rem;
     }
+}
+
+/* ---------------------- */
+
+.thankyou-card {
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.thankyou-card .title {
+    border: 0;
+    padding: 0;
+}
+
+.thankyou-card img {
+    width: 60%;
+    margin-inline: auto;
+}
+
+.thankyou-card .rating-container {
+    background-color: hsl(var(--clr-medium-grey), .1);
+    width: fit-content;
+    margin-inline: auto;
+    padding: .5rem .85rem;
+    border-radius: 100vw;
+    margin-bottom: 1rem;
+    color: hsl(var(--clr-yellow));
 }

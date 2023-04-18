@@ -20,11 +20,8 @@
       <h1 class="sr-only">Interactive rating component</h1>
 
       <!-- Rating state start -->
-      <div class="card">
-        <div class="icon">
-          <!-- <img src="images/icon-star.svg" alt="" /> -->
-          ⭐
-        </div>
+      <!-- <div class="card">
+        <div class="icon">⭐</div>
 
         <div>
           <h2 class="title">How did we do?</h2>
@@ -38,7 +35,6 @@
           <fieldset>
             <legend class="sr-only">Select a rating:</legend>
 
-            <!-- 1 -->
             <label for="rating-1">
               <input
                 type="radio"
@@ -50,7 +46,6 @@
               <span class="circle">1</span>
             </label>
 
-            <!-- 2 -->
             <label for="rating-2">
               <input
                 type="radio"
@@ -62,7 +57,6 @@
               <span class="circle">2</span>
             </label>
 
-            <!-- 3 -->
             <label for="rating-3">
               <input
                 type="radio"
@@ -74,7 +68,6 @@
               <span class="circle">3</span>
             </label>
 
-            <!-- 4 -->
             <label for="rating-4">
               <input
                 type="radio"
@@ -86,7 +79,6 @@
               <span class="circle">4</span>
             </label>
 
-            <!-- 5 -->
             <label for="rating-5">
               <input
                 type="radio"
@@ -101,20 +93,26 @@
 
           <button type="submit" class="btn">Submit</button>
         </form>
-      </div>
+      </div> -->
       <!-- Rating state end -->
-    </main>
 
-    <!-- ################### -->
-    <!-- Thank you state start -->
-    <div style="display: none">
-      You selected
-      <!-- Add rating here -->
-      out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch!
-    </div>
-    <!-- Thank you state end -->
-    <!-- ################### -->
+      <!-- Thank you state start -->
+      <div class="card thankyou-card">
+        <img src="images/Illustration144.png" alt="" />
+
+        <div class="rating-container">
+          <p>You selected <span id="rating">#</span> out of 5</p>
+        </div>
+
+        <h2 class="title">Thank you!</h2>
+
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </main>
 
     <script src="main.js"></script>
   </body>
