@@ -56,13 +56,13 @@ svg {
 body {
     font-family: var(--ff-primary);
     font-size: 0.938rem;
-    /* color: hsl(var(--clr-light-grey)); */
     color: hsl(var(--clr-white), .5);
     background-color: hsl(var(--clr-very-dark-blue));
     min-height: 100vh;
     width: 100%;
     display: grid;
     place-content: center;
+    overflow: hidden;
 }
 
 .main-content {
