@@ -20,7 +20,7 @@
       <h1 class="sr-only">Interactive rating component</h1>
 
       <!-- Rating state start -->
-      <!-- <div class="card">
+      <div class="card" id="rating-card">
         <div class="icon">⭐</div>
 
         <div>
@@ -31,7 +31,7 @@
           </p>
         </div>
 
-        <form class="rating-form">
+        <form class="rating-form" id="rating-form">
           <fieldset>
             <legend class="sr-only">Select a rating:</legend>
 
@@ -91,17 +91,26 @@
             </label>
           </fieldset>
 
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn" id="submit-btn" disabled>
+            Submit
+          </button>
         </form>
-      </div> -->
+      </div>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="card thankyou-card">
+      <div class="card thankyou-card hidden" id="thankyou-card">
         <img src="images/Illustration144.png" alt="" />
 
         <div class="rating-container">
-          <p>You selected <span id="rating">#</span> out of 5</p>
+          <p>
+            You selected
+            <span
+              id="ratingOutput"
+              style="color: greenyellow; font-weight: bold"
+            ></span>
+            out of 5
+          </p>
         </div>
 
         <h2 class="title">Thank you!</h2>
