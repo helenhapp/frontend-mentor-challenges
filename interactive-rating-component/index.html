@@ -16,21 +16,23 @@
   </head>
 
   <body>
-    <main>
-      <h1 sr-only>Interactive rating component</h1>
+    <main class="main-content">
+      <h1 class="sr-only">Interactive rating component</h1>
 
       <!-- Rating state start -->
       <div class="card">
         <div class="icon">
-          <img src="images/icon-star.svg" alt="" />
+          <!-- <img src="images/icon-star.svg" alt="" /> -->
+          ⭐
         </div>
 
-        <h2 class="title">How did we do?</h2>
-
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
+        <div>
+          <h2 class="title">How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
 
         <form class="rating-form">
           <fieldset>
@@ -97,7 +99,7 @@
             </label>
           </fieldset>
 
-          <button type="submit">Submit</button>
+          <button type="submit" class="btn">Submit</button>
         </form>
       </div>
       <!-- Rating state end -->
